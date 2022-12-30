@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../HomePage/India_Post_Logo-700x370.png">
+    <title> DETAILS - PostOffice Details - </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+        <div class="fs-5 fw-bold">
+        <a href="../index.html">
+            <button class="btn btn-warning rounded-2">
+                <img src="../left-icon.png" class="" alt="" width="35px" height="35px">Go Back
+            </button>
+        </a>
+       </div>
+        <div id="main">
+           
+        </div>
+</body>
+<script>
+    const code1 = new URLSearchParams(location.search).get('code');
+    const name1 = new URLSearchParams(location.search).get('Name');
+    const branchtype = new URLSearchParams(location.search).get('BranchName');
+    const division = new URLSearchParams(location.search).get('Division');
+    console.log(code1,name1,branchtype,division);
+
+    let displaycontent = ` <div class="card p-3 d-flex flex-column justify-content-between" style="height:40rem;width:25rem;">
+                <div class="card-header text-center" id="header"> ${name1} </div>
+                <div class="card-body text-center">
+                    <div id= "content"> <b>PINCODE</b> : ${code1}</div>
+                    <div> <b> Type of Branch </b> : ${branchtype}</div>
+                    <div> <b> Division </b> : ${division}</div>
+                </div>        
+            </div>`
+    document.getElementById("main").innerHTML = displaycontent;
+
+</script>
+</html>
