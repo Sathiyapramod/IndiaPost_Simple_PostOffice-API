@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --primary-ff: 'Roboto', sans-serif;
+    --primar-fontcolor: #062C30;
+
+}
+body{
+    background-color: #F5F5F5;
+}
+*{
+    margin: 0 auto;
+    padding: 5px;
+    color: var(--primar-fontcolor);
+    font-family: var(--primary-ff);
+}
+.card{
+    width: 15rem;
+    height: 10rem;
+}
+#details-button
+{
+    background-color: #05595b !important; 
+}
+#header{
+    background-color: #E2D784;
+}
