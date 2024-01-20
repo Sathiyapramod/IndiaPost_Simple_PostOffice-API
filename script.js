@@ -1,4 +1,8 @@
 let mainContent = document.getElementById("main");
+
+// Made required changes on the CI/CD sample pipeline setup
+
+
 const PostOffice = async ()=>{
     let content = document.getElementById("submitButton");
     content.addEventListener("click", ev =>{
