@@ -7,5 +7,10 @@ pipeline {
                 git 'https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API'
             }
         }
+        stage('Build') {
+            steps {
+                echo 'Building...'
+            }
+        }
     }
 }
