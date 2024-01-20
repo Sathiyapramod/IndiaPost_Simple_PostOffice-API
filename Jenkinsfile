@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                withCredentials([usernamePassword(credentialsId: 'sathiyapramod', usernameVariable: 'sathiyapramod', passwordVariable: 'PASSWORD')]) {
+                script {
                     git branch: 'master', credentialsId: 'sathiyapramod', url: 'https://github.com/Sathiyapramod/IndiaPost_Simple_PostOffice-API.git'
                 }
             }
