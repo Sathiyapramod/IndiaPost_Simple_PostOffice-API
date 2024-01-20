@@ -3,7 +3,6 @@
 :root{
     --primary-ff: 'Roboto', sans-serif;
     --primar-fontcolor: #062C30;
-
 }
 body{
     background-color: #F5F5F5;
@@ -17,6 +16,7 @@ body{
 .card{
     width: 15rem;
     height: 10rem;
+    border:1px solid grey;
 }
 #details-button
 {
